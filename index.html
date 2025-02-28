@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Board</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- DaisyUI and Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .poppins-regular {
+            font-family: "Poppins", sans-serif;
+        }
+
+        .bg-color {
+            background-color: rgba(174, 197, 203, 0.2);
+        }
+
+        .bg-body {
+            background-color: rgb(240, 234, 234);
+        }
+
+        .card-body {
+            background-color: rgb(204, 221, 235);
+        }
+    </style>
+
+</head>
+
+<body class="poppins-regular bg-body">
+    <!-- header -->
+    <header class="w-11/12 md:w-11/12 mx-auto pt-2 pb-6">
+        <nav class="flex justify-between rounded-2xl bg-white p-6">
+            <div class="flex items-center text-4xl gap-2 ml-2">
+                <img class="h-10" src="./assets/logo.png" alt="">
+                <h2>Dev<span class="font-bold">Board</span></h2>
+            </div>
+
+            <div class="flex items-center gap-6 mr-8">
+                <div class="flex items-center gap-3">
+                    <img src="./assets/checkbox.png" alt="">
+                    <h1 class="font-bold text-xl">23</h1>
+                </div>
+                <div class="flex items-center">
+                    <button> <img class="h-8" src="./assets/theme-btn.png" alt=""></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- full content section -->
+    <section class="w-11/12 md:w-11/12 mx-auto bg-white pt-2 rounded-2xl pb-4">
+        <!-- parent of two div -->
+        <div class="px-3 mb-16 flex gap-2">
+            <!-- Main content div -->
+            <div class="w-[80%]">
+                <!-- Time and date and discovere -->
+                <div class="flex gap-2 py-4">
+                    <!-- task assigned -->
+                    <div class="flex flex-row items-center  w-[20%] card-body rounded">
+                        <div>
+                            <img class="h-8" src="./assets/checkbox.png" alt="">
+                        </div>
+                        <div class="">
+                            <h1>Task Assigned </h1>
+                            <h1 class="font-bold text-xl">05</h1>
+                        </div>
+                    </div>
+
+                    <!-- Discover Something New Today! -->
+                    <div
+                        class="w-[55%] flex p-4 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-xl justify-center gap-4">
+                        <div>
+                            <img src="./assets/board.png" alt="">
+                        </div>
+                        <div>
+                            <h2 class="text-white text-2xl">Discover Something <br> New Today!</h2>
+                        </div>
+                    </div>
+
+                    <!-- date and time -->
+                    <div class="w-[20%] flex flex-row items-center card-body rounded">
+                        <div>
+                            <img src="./assets/calender.png" alt="">
+                        </div>
+                        <div>
+                            <h1>Wed</h1>
+                            <p>JUl 28 2025</p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Box conteiner -->
+                 <div class="grid grid-cols-3 gap-3">
+                    <!-- box-1 -->
+                    <div class="card-body rounded-md">
+                        <div>
+                            <button class="btn bg-white">ShopEase</button>
+                        </div>
+
+                        <h1 class="font-bold">Fix Mobile Button Issue </h1>
+                        <div class="bg-white p-2 rounded">
+                            Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        </div>
+
+                        <div class="border-2 border-cyan-500 border-spacing-4 border-dashed mt-2 mb-2"></div>
+
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h1>Deadline</h1>
+                                <h1 class="font-bold text-xl">21 march 2025</h1>
+                            </div>
+                            <div>
+                                <button class="btn btn-active btn-primary">Completed</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- box 2 -->
+                    <div class="card-body rounded-md">
+                        <div>
+                            <button class="btn bg-white">CloudSync</button>
+                        </div>
+
+                        <h1 class="font-bold">Add Dark Mode</h1>
+                        <div class="bg-white p-2 rounded">
+                            Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        </div>
+
+                        <div class="border-2 border-cyan-500 border-spacing-4 border-dashed mt-2 mb-2"></div>
+
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h1>Deadline</h1>
+                                <h1 class="font-bold text-xl">21 march 2025</h1>
+                            </div>
+                            <div>
+                                <button class="btn btn-active btn-primary">Completed</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- box-3 -->
+                    <div class="card-body rounded-md">
+                        <div>
+                            <button class="btn bg-white">SwiftPay</button>
+                        </div>
+
+                        <h1 class="font-bold">Optimize  Home page </h1>
+                        <div class="bg-white p-2 rounded">
+                            Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        </div>
+
+                        <div class="border-2 border-cyan-500 border-spacing-4 border-dashed mt-2 mb-2"></div>
+
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h1>Deadline</h1>
+                                <h1 class="font-bold text-xl">21 march 2025</h1>
+                            </div>
+                            <div>
+                                <button class="btn btn-active btn-primary">Completed</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- box 4 -->
+                    <div class="card-body rounded-md">
+                        <div>
+                            <button class="btn bg-white">Meta</button>
+                        </div>
+
+                        <h1 class="font-bold">Add new emoji 🤲</h1>
+                        <div class="bg-white p-2 rounded">
+                            Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        </div>
+
+                        <div class="border-2 border-cyan-500 border-spacing-4 border-dashed mt-2 mb-2"></div>
+
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h1>Deadline</h1>
+                                <h1 class="font-bold text-xl">21 march 2025</h1>
+                            </div>
+                            <div>
+                                <button class="btn btn-active btn-primary">Completed</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- box 5 -->
+                    <div class="card-body rounded-md">
+                        <div>
+                            <button class="btn bg-white">Google LLC</button>
+                        </div>
+
+                        <h1 class="font-bold">Integrate OpenAI API </h1>
+                        <div class="bg-white p-2 rounded">
+                            Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        </div>
+
+                        <div class="border-2 border-cyan-500 border-spacing-4 border-dashed mt-2 mb-2"></div>
+
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h1>Deadline</h1>
+                                <h1 class="font-bold text-xl">21 march 2025</h1>
+                            </div>
+                            <div>
+                                <button class="btn btn-active btn-primary">Completed</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- box-6 -->
+                    <div class="card-body rounded-md">
+                        <div>
+                            <button class="btn bg-white">Glassdoar</button>
+                        </div>
+
+                        <h1 class="font-bold">Improve Job searching </h1>
+                        <div class="bg-white p-2 rounded">
+                            Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        </div>
+
+                        <div class="border-2 border-cyan-500 border-spacing-4 border-dashed mt-2 mb-2"></div>
+
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h1>Deadline</h1>
+                                <h1 class="font-bold text-xl">21 march 2025</h1>
+                            </div>
+                            <div>
+                                <button class="btn btn-active btn-primary">Completed</button>
+                            </div>
+                        </div>
+                    </div>
+
+                 </div>
+
+            </div>
+
+            <!-- HIstory div -->
+            <div class="card-body bg-slate-200 text-center rounded-xl mt-4">
+                <!-- Upper part -->
+                 <div>
+                    <div>
+                        <p class="font-semibold text-xl">Activity Log</p>
+                    </div>
+                 </div>
+                 <div>
+                    <button class="btn btn-active btn-primary">Clear History</button>
+                </div>
+
+                <div class="border-2 border-cyan-300 border-spacing-4 border-dashed mt-2 mb-2"></div>
+
+                <!-- input container -->
+                 <div id="history-keeper" class="mt-2">
+
+                 </div>
+
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
