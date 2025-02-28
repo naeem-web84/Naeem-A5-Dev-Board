@@ -26,17 +26,21 @@
         }
 
         .bg-body {
-            background-color: #3751fd29;
+            background-color: #1d30add2;
         }
 
         .card-body {
-            background-color: #3751fd30;
+            background-color: #3751fd1e;
         }
+
+         .main-bd{
+            background-color: #FFDDC1;
+         }
     </style>
 
 </head>
 
-<body class="poppins-regular bg-body">
+<body id="bg-change-body" class="poppins-regular main-bd">
     <!-- header -->
     <header class="w-11/12 md:w-11/12 mx-auto pt-2 pb-6">
         <nav class="flex justify-between rounded-2xl bg-white p-6">
@@ -50,7 +54,7 @@
                     <img src="./assets/checkbox.png" alt="">
                     <h1 id="nav-add-checkout" class="font-bold text-xl">23</h1>
                 </div>
-                <div class="flex items-center">
+                <div id="change-bg" class="flex items-center">
                     <button> <img class="h-8" src="./assets/theme-btn.png" alt=""></button>
                 </div>
             </div>
@@ -58,21 +62,21 @@
     </header>
 
     <!-- full content section -->
-    <section class="w-11/12 md:w-11/12 mx-auto bg-white pt-2 rounded-2xl pb-4">
+    <section class="w-11/12 md:w-11/12 mx-auto pt-2 rounded-2xl pb-4">
         <!-- parent of two div -->
         <div class="px-3 mb-16 flex gap-2">
             <!-- Main content div -->
-            <div class="w-[80%]">
+            <div class="w-[80%] bg-white rounded-2xl p-3">
                 <!-- Time and date and discovere -->
-                <div class="flex gap-2 py-4">
+                <div class="flex gap-2 py-2">
                     <!-- task assigned -->
                     <div class="flex flex-row items-center  w-[20%] card-body rounded">
                         <div>
                             <img class="h-8" src="./assets/checkbox.png" alt="">
                         </div>
                         <div class="">
-                            <h1>Task Assigned </h1>
-                            <h1 id="task-minus" class="font-bold text-xl">05</h1>
+                            <h1 class="text-sm">Task Assigned</h1>
+                            <h1 id="task-minus" class="font-bold text-2xl">06</h1>
                         </div>
                     </div>
 
@@ -255,7 +259,7 @@
             </div>
 
             <!-- HIstory div -->
-            <div class="card-body w-[20%] bg-body text-center rounded-xl mt-4">
+            <div class="card-body w-[20%] bg-body text-center rounded-xl bg-white">
                 <!-- Upper part -->
                 <div>
                     <div>
@@ -263,7 +267,7 @@
                     </div>
                 </div>
                 <div>
-                    <button class="btn btn-active btn-primary">Clear History</button>
+                    <button id="btn-clear" class="btn btn-active btn-primary">Clear History</button>
                 </div>
 
                 <div class="border-2 border-cyan-300 border-spacing-4 border-dashed mt-2 mb-2"></div>
@@ -282,6 +286,7 @@
     <script src="./script/time.js"></script>
     <script src="./script/utilities.js"></script>
     <script src="./script/script.js"></script>
+    <script src="./script/background.js"></script>
 </body>
 
 </html>
