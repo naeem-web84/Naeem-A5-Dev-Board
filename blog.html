@@ -1,16 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
+
+     <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link
+         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+         rel="stylesheet">
+
+         <!-- DaisyUI and Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .poppins-regular {
+            font-family: "Poppins", sans-serif;
+        }
+
+        .bg-color {
+            background-color: rgba(174, 197, 203, 0.2);
+        }
+
+        .bg-body {
+            background-color: #1d30add2;
+        }
+
+        .card-body {
+            background-color: #3751fd1e;
+        }
+
+         .main-bd{
+            background-color: #FFDDC1;
+         }
+    </style>
 </head>
-<body>
-    <div>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, dicta ducimus excepturi quidem ea accusantium cupiditate, inventore provident eius libero ad? Dolorem id, dolores suscipit dolor iure ex quas reprehenderit.
-    </div>
+
+<body class="poppins-regular main-bd">
+    <section class="w-11/12 md:w-11/12 mx-auto pt-2 pb-6">
+        <header>
+            <nav class="flex justify-between items-center bg-white shadow-xl p-5 rounded-2xl">
+                <div class="flex items-center text-4xl gap-2 ml-2">
+                    <img class="h-10" src="./assets/logo.png" alt="">
+                    <h2>Dev<span class="font-bold">Board</span></h2>
+                </div>
+
+                <div>
+                    <button id="btn-back" class="btn bg-blue-600">Back to Desk</button>
+                </div>
+            </nav>
+        </header>
+
+        <!-- box -->
+         <div class="m-5">
+            <h2 class="font-bold text-2xl text-center">Blog</h2>
+         </div>
+    </section>
 
 
-    <script src="./script/swift.js"></script>
+    <section class="w-11/12 md:w-11/12 mx-auto pt-2 pb-6">
+        <!-- question and answer -->
+        <div>
+            <!-- first question -->
+             <div class="bg-white p-8 rounded mb-3">
+                <div class="font-bold text-xl p-3">Question-1:What are the different ways to select an elements in a DOM</div>
+
+                <div class="border border-dashed border-blue-200"></div>
+
+                <!-- answer -->
+                 <div class="p-3">
+                     In JavaScript DOM is the short form of Document Object Model. In JS it's a tree like structure. However there are several ways to select the elements in a DOM. But there are Five standards way to select the elements.
+                     They are : <br>
+                     1. Selects an elements by it's ID = getElementById(); <br>
+                     2.Selects an elements by it's className = getElementsByClasssName(); <br>
+                     3.Selects elements by their tag name = getElementsByTagName(); <br>
+                     4.Using CSS selectors select the first element = querySelector(); <br>
+                     5.Select all matching elements using CSS selector = querySelectorAll();
+                     <br>
+                     This five is enough to select any elements in a dom eventhough there are some alternate selectors like, document.forms, document.image etc.
+
+                 </div>
+             </div>
+
+            <!-- Second question -->
+             <div class="bg-white p-8 rounded mb-3">
+                <div class="font-bold text-xl p-3">Question-2: What is the difference between innerHTML, innerText, and textContent ?</div>
+
+                <div class="border border-dashed border-blue-200"></div>
+
+                <!-- answer -->
+                 <div class="p-3"> 
+                    Discussing about the difference between these three : <br>
+                    
+                    <table class="border border-black border-collapse w-full text-centre">
+                        <thead>
+                            <tr>
+                                <th class="border border-black px-4 py-2">innerHTML</th>
+                                <th class="border border-black px-4 py-2">innerText</th>
+                                <th class="border border-black px-4 py-2">textContent</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="border border-black px-4 py-2">innerHTML takes all the html inside and it's text also.</td>
+                                <td class="border border-black px-4 py-2">innerText takes only the visible text inside the html.</td>
+                                <td class="border border-black px-4 py-2">It takes everything. Even if there are a blank space, textContent also take it as a text.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                 </div>
+             </div>
+
+            <!-- Third question -->
+             <div class="bg-white p-8 rounded mb-3">
+                <div class="font-bold text-xl p-3">Question-3: What is event delegation in the DOM?
+
+                </div>
+
+                <div class="border border-dashed border-blue-200"></div>
+
+                <!-- answer -->
+                 <div class="p-3">
+                     Event delegation is a technique which works by Javascript Event Bubbling.
+                     where we target the parent element , if anything happens with its child it can understand some thing is done in my child. In simplest way Event delegation is a technique where we set an event in parent So that when an event occurs in the child elements, it can be captured. 
+                 </div>
+             </div>
+
+            <!-- Fourth question -->
+             <div class="bg-white p-8 rounded mb-3">
+                <div class="font-bold text-xl p-3">Question-4: What is event bubbling in the DOM?</div>
+
+                <div class="border border-dashed border-blue-200"></div>
+
+                <!-- answer -->
+                 <div class="p-3">
+                   Event Bubbling is a default behaviour of JavaScripts. It's a process where at first an event occours in a child element and then that event climb up in its parent and then its grandParent then in its root element. Its travels in upward like a bubble, like a fully filled glass of water where a bubble comes from its bottom to top. So its called Bubbling , because the event bubble up to the parents .
+                 </div>
+             </div>
+
+            <!-- Fifth question -->
+             <div class="bg-white p-8 rounded mb-3">
+                <div class="font-bold text-xl p-3">Question-5: How do you create, add, and remove elements using JavaScript?</div>
+
+                <div class="border border-dashed border-blue-200"></div>
+
+                <!-- answer -->
+                 <div class="p-3">
+                      These are called methods in JavaScript.These methods ease our coding . Step by step im describing about these three methods. <br><br>
+                      1.Create Element : we can easily create a new element by using JavaScript. For that we have to write a method like <br>
+                       =  document.createElement("");
+                     <br>  in its ("") string we have to write which element we want to create . if its a div we have to write  document.createElement("div");
+                     <br><br>
+                     2.Add Element : we can use append(), appendChild(). <br>
+                     In which element we want to add first we have to select that parent then if we add one element we can use appendChild(), if there are more we can use append().
+                 </div>
+             </div>
+
+
+
+
+
+
+        </div>
+    </section>
+
+
+    <script src="./script/anotherswift.js"></script>
+    <script src="./script/background.js"></script>
 </body>
+
 </html>
