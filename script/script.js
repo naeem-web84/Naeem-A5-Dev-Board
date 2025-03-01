@@ -50,7 +50,7 @@ document.getElementById("btn-2").addEventListener("click", function (event) {
     const div = document.createElement("div");
 
     div.innerHTML = `
-    You have completed task Fix Mobile Button Issue at  ${bdTimeHistory}
+    You have completed task Add Dark Mode at ${bdTimeHistory}
     `
     div.classList.add("mt-3", "bg-white", "rounded-xl", "p-4");
     historyContainer.appendChild(div);
@@ -80,7 +80,7 @@ document.getElementById("btn-3").addEventListener("click", function (event) {
     const div = document.createElement("div");
 
     div.innerHTML = `
-    You have completed task Fix Mobile Button Issue at  ${bdTimeHistory}
+    You have completed task Optimize Home page at ${bdTimeHistory}
     `
     div.classList.add("mt-3", "bg-white", "rounded-xl", "p-4");
     historyContainer.appendChild(div);
@@ -111,7 +111,7 @@ document.getElementById("btn-4").addEventListener("click", function (event) {
     const div = document.createElement("div");
 
     div.innerHTML = `
-    You have completed task Fix Mobile Button Issue at  ${bdTimeHistory}
+    You have completed taskAdd new emoji 🤲 at ${bdTimeHistory}
     `
     div.classList.add("mt-3", "bg-white", "rounded-xl", "p-4");
     historyContainer.appendChild(div);
@@ -141,7 +141,7 @@ document.getElementById("btn-5").addEventListener("click", function (event) {
     const div = document.createElement("div");
 
     div.innerHTML = `
-    You have completed task Fix Mobile Button Issue at  ${bdTimeHistory}
+    You have completed task Integrate OpenAI API at ${bdTimeHistory}
     `
     div.classList.add("mt-3", "bg-white", "rounded-xl", "p-4");
     historyContainer.appendChild(div);
@@ -170,7 +170,7 @@ document.getElementById("btn-6").addEventListener("click", function (event) {
     const div = document.createElement("div");
 
     div.innerHTML = `
-    You have completed task Fix Mobile Button Issue at  ${bdTimeHistory}
+    You have completed task Improve Job searching at ${bdTimeHistory}
     `
     div.classList.add("mt-3", "bg-white", "rounded-xl", "p-4");
     historyContainer.appendChild(div);
