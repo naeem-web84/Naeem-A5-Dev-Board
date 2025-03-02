@@ -1,7 +1,14 @@
+// title
+const titleOne = document.getElementById("title-1").innerText;
+const titleTwo = document.getElementById("title-2").innerText;
+const titleThree = document.getElementById("title-3").innerText;
+const titleFour = document.getElementById("title-4").innerText;
+const titleFive = document.getElementById("title-5").innerText;
+const titleSix = document.getElementById("title-6").innerText;
 
 // Button one 
 const buttonOne = document.getElementById("btn-1")
-document.getElementById("btn-1").addEventListener("click", function (event) {
+buttonOne.addEventListener("click", function (event) {
     event.preventDefault();
     alert("Board Updated Successfully");
 
@@ -20,7 +27,7 @@ document.getElementById("btn-1").addEventListener("click", function (event) {
     const div = document.createElement("div");
 
     div.innerHTML = `
-    You have completed task Fix Mobile Button Issue at  ${bdTimeHistory}
+    You have completed task ${titleOne} at ${bdTimeHistory}
     `
 
     div.classList.add("mt-3", "bg-white", "rounded-xl", "p-4");
@@ -33,7 +40,7 @@ document.getElementById("btn-1").addEventListener("click", function (event) {
 
 // Button Two
 const buttonTwo = document.getElementById("btn-2")
-document.getElementById("btn-2").addEventListener("click", function (event) {
+buttonTwo.addEventListener("click", function (event) {
     event.preventDefault();
     alert("Board Updated Successfully");
 
@@ -52,7 +59,7 @@ document.getElementById("btn-2").addEventListener("click", function (event) {
     const div = document.createElement("div");
 
     div.innerHTML = `
-    You have completed task Add Dark Mode at ${bdTimeHistory}
+    You have completed task ${titleTwo} at ${bdTimeHistory}
     `
     div.classList.add("mt-3", "bg-white", "rounded-xl", "p-4");
     historyContainer.appendChild(div);
@@ -65,7 +72,7 @@ document.getElementById("btn-2").addEventListener("click", function (event) {
 
 // Button Three
 const buttonThree = document.getElementById("btn-3")
-document.getElementById("btn-3").addEventListener("click", function (event) {
+buttonThree.addEventListener("click", function (event) {
     event.preventDefault();
     alert("Board Updated Successfully");
 
@@ -84,7 +91,7 @@ document.getElementById("btn-3").addEventListener("click", function (event) {
     const div = document.createElement("div");
 
     div.innerHTML = `
-    You have completed task Optimize Home page at ${bdTimeHistory}
+    You have completed task ${titleThree} at ${bdTimeHistory}
     `
     div.classList.add("mt-3", "bg-white", "rounded-xl", "p-4");
     historyContainer.appendChild(div);
@@ -98,7 +105,7 @@ document.getElementById("btn-3").addEventListener("click", function (event) {
 //Button Four
 
 const buttonFour = document.getElementById("btn-4")
-document.getElementById("btn-4").addEventListener("click", function (event) {
+buttonFour.addEventListener("click", function (event) {
     event.preventDefault();
     alert("Board Updated Successfully");
 
@@ -117,7 +124,7 @@ document.getElementById("btn-4").addEventListener("click", function (event) {
     const div = document.createElement("div");
 
     div.innerHTML = `
-    You have completed taskAdd new emoji 🤲 at ${bdTimeHistory}
+    You have completed task ${titleFour} at ${bdTimeHistory}
     `
     div.classList.add("mt-3", "bg-white", "rounded-xl", "p-4");
     historyContainer.appendChild(div);
@@ -130,7 +137,7 @@ document.getElementById("btn-4").addEventListener("click", function (event) {
 
 // Button Five 
 const buttonFive = document.getElementById("btn-5")
-document.getElementById("btn-5").addEventListener("click", function (event) {
+buttonFive.addEventListener("click", function (event) {
     event.preventDefault();
     alert("Board Updated Successfully");
 
@@ -149,7 +156,7 @@ document.getElementById("btn-5").addEventListener("click", function (event) {
     const div = document.createElement("div");
 
     div.innerHTML = `
-    You have completed task Integrate OpenAI API at ${bdTimeHistory}
+    You have completed task ${titleFive} at ${bdTimeHistory}
     `
     div.classList.add("mt-3", "bg-white", "rounded-xl", "p-4");
     historyContainer.appendChild(div);
@@ -161,7 +168,7 @@ document.getElementById("btn-5").addEventListener("click", function (event) {
 
 // Button six
 const buttonSix = document.getElementById("btn-6")
-document.getElementById("btn-6").addEventListener("click", function (event) {
+buttonSix.addEventListener("click", function (event) {
     event.preventDefault();
     alert("Board Updated Successfully");
 
@@ -180,7 +187,7 @@ document.getElementById("btn-6").addEventListener("click", function (event) {
     const div = document.createElement("div");
 
     div.innerHTML = `
-    You have completed task Improve Job searching at ${bdTimeHistory}
+    You have completed task ${titleSix} at ${bdTimeHistory}
     `
     div.classList.add("mt-3", "bg-white", "rounded-xl", "p-4");
     historyContainer.appendChild(div);

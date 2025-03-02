@@ -13,7 +13,7 @@ function setInnerText(id, value) {
 function checkAllButtons() {
     if (buttonOne.disabled && buttonTwo.disabled && buttonThree.disabled && buttonFour.disabled && buttonFive.disabled && buttonSix.disabled) {
         setTimeout(() => {
-            alert("All button is clicked");    
+            alert("Congrates!!! You have compeleted all the current task");    
         }, 100);
     }
 }
