@@ -1,11 +1,17 @@
 
 
-function getInnerTextByID(id){
+function getInnerTextByID(id) {
     const value = document.getElementById(id).innerText;
     const convertedValue = parseFloat(value);
     return convertedValue;
 }
 
-function setInnerText(id,value) {
+function setInnerText(id, value) {
     document.getElementById(id).innerText = value;
+}
+
+function checkAllButtons() {
+    if (buttonOne.disabled && buttonTwo.disabled && buttonThree.disabled && buttonFour.disabled && buttonFive.disabled && buttonSix.disabled) {
+        alert("All button is clicked");
+    }
 }

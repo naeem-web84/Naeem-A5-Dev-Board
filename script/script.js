@@ -1,4 +1,7 @@
 
+
+
+
 // Button one 
 const buttonOne = document.getElementById("btn-1")
 document.getElementById("btn-1").addEventListener("click", function (event) {
@@ -27,6 +30,8 @@ document.getElementById("btn-1").addEventListener("click", function (event) {
     historyContainer.appendChild(div);
 
     buttonOne.disabled = true;
+
+    checkAllButtons();
 })
 
 // Button Two
@@ -56,6 +61,8 @@ document.getElementById("btn-2").addEventListener("click", function (event) {
     historyContainer.appendChild(div);
 
     buttonTwo.disabled = true;
+
+    checkAllButtons();
 })
 
 
@@ -86,6 +93,8 @@ document.getElementById("btn-3").addEventListener("click", function (event) {
     historyContainer.appendChild(div);
 
     buttonThree.disabled = true;
+
+    checkAllButtons();
 })
 
 
@@ -117,6 +126,8 @@ document.getElementById("btn-4").addEventListener("click", function (event) {
     historyContainer.appendChild(div);
 
     buttonFour.disabled = true;
+
+    checkAllButtons();
 })
 
 
@@ -147,6 +158,8 @@ document.getElementById("btn-5").addEventListener("click", function (event) {
     historyContainer.appendChild(div);
 
     buttonFive.disabled = true;
+
+    checkAllButtons();
 })
 
 // Button six
@@ -176,6 +189,8 @@ document.getElementById("btn-6").addEventListener("click", function (event) {
     historyContainer.appendChild(div);
 
     buttonSix.disabled = true;
+
+    checkAllButtons();
 })
 
 
