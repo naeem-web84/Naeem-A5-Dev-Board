@@ -12,6 +12,8 @@ function setInnerText(id, value) {
 
 function checkAllButtons() {
     if (buttonOne.disabled && buttonTwo.disabled && buttonThree.disabled && buttonFour.disabled && buttonFive.disabled && buttonSix.disabled) {
-        alert("All button is clicked");
+        setTimeout(() => {
+            alert("All button is clicked");    
+        }, 100);
     }
 }

@@ -1,7 +1,4 @@
 
-
-
-
 // Button one 
 const buttonOne = document.getElementById("btn-1")
 document.getElementById("btn-1").addEventListener("click", function (event) {
